@@ -108,7 +108,8 @@ Date:   Wed Nov 10 18:26:32 2021 -0600
     Estructura HTML5
 
 User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico (master)
-$
+$ ^C
+
 User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico (master)
 $ git log --stat
 commit a3a56d8f798ddf340a97fdc88faf660e8c74683e (HEAD -> master)
@@ -120,4 +121,89 @@ Date:   Wed Nov 10 18:26:32 2021 -0600
  index.html | 0
  1 file changed, 0 insertions(+), 0 deletions(-)
 
-User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico (ma
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico (master)
+$ ^C
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico (master)
+$ git add .
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico (master)
+$ git log --stat
+commit a3a56d8f798ddf340a97fdc88faf660e8c74683e (HEAD -> master)
+Author: gilbertotg <gilberto.telesforo@gmail.com>
+Date:   Wed Nov 10 18:26:32 2021 -0600
+
+    Estructura HTML5
+
+ index.html | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico (master)
+$ git add index.html
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico (master)
+$ git log --stat
+commit a3a56d8f798ddf340a97fdc88faf660e8c74683e (HEAD -> master)
+Author: gilbertotg <gilberto.telesforo@gmail.com>
+Date:   Wed Nov 10 18:26:32 2021 -0600
+
+    Estructura HTML5
+
+ index.html | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+        new file:   prueba.txt
+
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico (master)
+$ git commit -m "Estructura HTML5"
+[master 94b98b3] Estructura HTML5
+ 3 files changed, 148 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 prueba.txt
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico (master)
+$ git log --stat
+commit 94b98b3473ec470d6ce74cffd67b4fd4e0cdfb2e (HEAD -> master)
+Author: gilbertotg <gilberto.telesforo@gmail.com>
+Date:   Wed Nov 10 19:11:36 2021 -0600
+
+    Estructura HTML5
+
+ .gitignore |   2 +
+ index.html |  23 ++++++++++++
+ prueba.txt | 123 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 148 insertions(+)
+
+commit a3a56d8f798ddf340a97fdc88faf660e8c74683e
+Author: gilbertotg <gilberto.telesforo@gmail.com>
+Date:   Wed Nov 10 18:26:32 2021 -0600
+
+    Estructura HTML5
+
+ index.html | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico (master)
+$ git add index.html
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico (master)
+$ git add .
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico (master)
+$ ^C
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico (master)
+$
