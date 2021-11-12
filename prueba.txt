@@ -121,3 +121,147 @@ Date:   Wed Nov 10 18:26:32 2021 -0600
  1 file changed, 0 insertions(+), 0 deletions(-)
 
 User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico (ma
+
+#############################################################################
+################################################################################
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico ((94b98b3...))
+$ git -log
+unknown option: -log
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico ((94b98b3...))
+$ git stat
+git: 'stat' is not a git command. See 'git --help'.
+
+The most similar commands are
+        status
+        stage
+        stash
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico ((94b98b3...))
+$ git status
+HEAD detached at 94b98b3
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   prueba.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico ((94b98b3...))
+$ git log
+commit 94b98b3473ec470d6ce74cffd67b4fd4e0cdfb2e (HEAD)
+Author: gilbertotg <gilberto.telesforo@gmail.com>
+Date:   Wed Nov 10 19:11:36 2021 -0600
+
+    Estructura HTML5
+
+commit a3a56d8f798ddf340a97fdc88faf660e8c74683e
+Author: gilbertotg <gilberto.telesforo@gmail.com>
+Date:   Wed Nov 10 18:26:32 2021 -0600
+
+    Estructura HTML5
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico ((94b98b3...))
+$ git log --stat
+commit 94b98b3473ec470d6ce74cffd67b4fd4e0cdfb2e (HEAD)
+Author: gilbertotg <gilberto.telesforo@gmail.com>
+Date:   Wed Nov 10 19:11:36 2021 -0600
+
+    Estructura HTML5
+
+ .gitignore |   2 +
+ index.html |  23 ++++++++++++
+ prueba.txt | 123 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 148 insertions(+)
+
+commit a3a56d8f798ddf340a97fdc88faf660e8c74683e
+Author: gilbertotg <gilberto.telesforo@gmail.com>
+Date:   Wed Nov 10 18:26:32 2021 -0600
+
+    Estructura HTML5
+
+ index.html | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico ((94b98b3...))
+$ git add .
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico ((94b98b3...))
+$ git status
+HEAD detached at 94b98b3
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        modified:   prueba.txt
+
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico ((94b98b3...))
+$ git commit -m "agregamos gitignore y cambiamos el index"
+[detached HEAD aca3dcd] agregamos gitignore y cambiamos el index
+ 2 files changed, 118 insertions(+), 2 deletions(-)
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico ((aca3dcd...))
+$ git log
+commit aca3dcdd3e31a3c1181fc4e10cf264ce85b9a0b4 (HEAD)
+Author: gilbertotg <gilberto.telesforo@gmail.com>
+Date:   Thu Nov 11 18:20:51 2021 -0600
+
+    agregamos gitignore y cambiamos el index
+
+commit 94b98b3473ec470d6ce74cffd67b4fd4e0cdfb2e
+Author: gilbertotg <gilberto.telesforo@gmail.com>
+Date:   Wed Nov 10 19:11:36 2021 -0600
+
+    Estructura HTML5
+
+commit a3a56d8f798ddf340a97fdc88faf660e8c74683e
+Author: gilbertotg <gilberto.telesforo@gmail.com>
+Date:   Wed Nov 10 18:26:32 2021 -0600
+
+    Estructura HTML5
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico ((aca3dcd...))
+$ git log --oneline
+aca3dcd (HEAD) agregamos gitignore y cambiamos el index
+94b98b3 Estructura HTML5
+a3a56d8 Estructura HTML5
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico ((aca3dcd...))
+$ git checkout 94b98b3
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  aca3dcd agregamos gitignore y cambiamos el index
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> aca3dcd
+
+HEAD is now at 94b98b3 Estructura HTML5
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico ((94b98b3...))
+$ git log
+commit 94b98b3473ec470d6ce74cffd67b4fd4e0cdfb2e (HEAD)
+Author: gilbertotg <gilberto.telesforo@gmail.com>
+Date:   Wed Nov 10 19:11:36 2021 -0600
+
+    Estructura HTML5
+
+commit a3a56d8f798ddf340a97fdc88faf660e8c74683e
+Author: gilbertotg <gilberto.telesforo@gmail.com>
+Date:   Wed Nov 10 18:26:32 2021 -0600
+
+    Estructura HTML5
+
+User@DESKTOP-TKF4DGP MINGW64 /c/Cursos/Git/02gitbasico ((94b98b3...))
+$
+#############################################################################
+################################################################################
+$ git branch  # cuantas ramas tenemos
